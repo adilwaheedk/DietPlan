@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Alert Service" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="prefALert"
+            android:summary="Recieve meal notifications"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="Enable Alerts" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="prefAlertSettings"
+        android:title="ALert Settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="prefALert"
+            android:key="prefBreakfastALert"
+            android:summary="Enable alert for breakfast"
+            android:title="Breakfast Alert" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="prefALert"
+            android:key="prefLunchALert"
+            android:summary="Enable alert for lunch"
+            android:title="Lunch Alert" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="prefALert"
+            android:key="prefSnacksALert"
+            android:summary="Enable alert for snacks"
+            android:title="Snacks Alert" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="prefALert"
+            android:key="prefDinnerALert"
+            android:summary="Enable alert for dinner"
+            android:title="Dinner Alert" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="prefALert"
+            android:key="prefSound"
+            android:summary="Play sound when notification recieved"
+            android:title="Enable Sound" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="prefALert"
+            android:key="prefVibrate"
+            android:summary="Vibrate when notification recieved"
+            android:title="Enable Vibration" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="prefALert"
+            android:key="prefWakeup"
+            android:summary="Wakeup when notification recieved"
+            android:title="Enable Wakeup" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="prefSetTime"
+        android:title="Set Timings" >
+        <com.example.dietplan.utils.TimePreference
+            android:dependency="prefALert"
+            android:key="prefBreakfast"
+            android:summary="Set breakfast alert timing"
+            android:title="Breakfast Time" />
+        <com.example.dietplan.utils.TimePreference
+            android:dependency="prefALert"
+            android:key="prefLunch"
+            android:summary="Set lunch alert timing"
+            android:title="Lunch Time" />
+        <com.example.dietplan.utils.TimePreference
+            android:dependency="prefALert"
+            android:key="prefSnacks"
+            android:summary="Set snacks alert timing"
+            android:title="Snacks Time" />
+        <com.example.dietplan.utils.TimePreference
+            android:dependency="prefALert"
+            android:key="prefDinner"
+            android:summary="Set dinner alert timing"
+            android:title="Dinner Time" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Memory" >
+        <Preference
+            android:key="prefResetSchedule"
+            android:summary="Clear weekly schedule"
+            android:title="Reset Schedule" />
+        <Preference>
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

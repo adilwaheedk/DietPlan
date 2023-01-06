@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollViewHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:context=".activity.ActivityHome" >
+
+        <TextView
+            android:id="@+id/profilenametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="WELCOME"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilenametext"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            tools:context=".activity.ActivityHome" >
+
+            <Space
+                android:id="@+id/Space1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:id="@+id/Space3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:id="@+id/Space2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical" />
+
+            <LinearLayout
+                android:id="@+id/profilelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/profilebtn"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/profile"
+                    android:onClick="profileBtn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/profilelbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Profile"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dietplanlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/dietplanbtn"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/plate"
+                    android:onClick="dietPlanBtn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/plate" />
+
+                <TextView
+                    android:id="@+id/dietplanlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Plan Diet"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/meallayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/mealbtn"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/cal"
+                    android:onClick="mealBtn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cal" />
+
+                <TextView
+                    android:id="@+id/meallbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Meal"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

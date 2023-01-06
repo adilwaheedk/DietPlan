@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollViewSelect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.ActivitySelect" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        tools:context=".activity.ActivitySelect" >
+
+        <TextView
+            android:id="@+id/calsperdaylbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:text="Calories Per Day"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nooflbsval"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/nooflbslbl"
+            android:layout_alignBottom="@+id/nooflbslbl"
+            android:layout_toRightOf="@+id/nooflbslbl"
+            android:ems="10"
+            android:includeFontPadding="false"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textSize="14sp"
+            android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/calsperdayval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/calsperdaylbl"
+            android:text="00"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/calselectedval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nooflbslbl"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/calselectedlbl"
+            android:text="00"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/calselectedlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/calsperdayval"
+            android:text="Selected"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goallbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/calsperdaylbl"
+            android:layout_below="@+id/calsperdaylbl"
+            android:text="Goal"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goalval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/nooflbsval"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/goallbl"
+            android:text="Gain"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/nooflbslbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/goallbl"
+            android:layout_alignBottom="@+id/goallbl"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/goalval"
+            android:text="No. of Pounds"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/calsrcmndlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goallbl"
+            android:layout_marginLeft="8dp"
+            android:text="Calories Recommended"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/calsrcmndval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nooflbslbl"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/calsrcmndlbl"
+            android:text="00"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/calsrcmndlbl"
+            android:gravity="end" >
+
+            <Spinner
+                android:id="@+id/breakfastspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breakfastmeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+            <TextView
+                android:id="@+id/breakfastmeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daytext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="6dp"
+                android:text="Breakfast Meal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/lunchspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lunchmeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+            <TextView
+                android:id="@+id/lunchmeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breakfastspinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Lunch Meal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/snackmeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lunchspinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Snack Meal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/snackspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/snackmeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+            <TextView
+                android:id="@+id/dinnermeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/snackspinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Dinner Meal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/dinnerspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dinnermeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+            <ImageView
+                android:id="@+id/previousbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:onClick="previousBtn"
+                android:src="@drawable/left" />
+
+            <ImageView
+                android:id="@+id/nextbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/breakfastspinner"
+                android:layout_alignTop="@+id/previousbtn"
+                android:layout_marginRight="16dp"
+                android:onClick="nextBtn"
+                android:src="@drawable/right" />
+
+            <TextView
+                android:id="@+id/daytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="DAY"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/saveDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RelativeLayoutList"
+            android:onClick="savedietBtn"
+            android:text="Save Diet"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

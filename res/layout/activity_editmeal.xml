@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutDeleteMeal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context=".activity.ActivityEditMeal" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutDelMealBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/editmealbtn"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="editMeal"
+            android:text="Edit Meal"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/refreshbtn"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="refreshMeal"
+            android:text="Refresh"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerEditMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerEditMealType"
+        android:layout_alignRight="@+id/spinnerEditMealType"
+        android:layout_below="@+id/editmealselectlbl"
+        android:spinnerMode="dialog"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <Spinner
+        android:id="@+id/spinnerEditMealType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editmealselectlbl"
+        android:layout_below="@+id/editmealtypelbl"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:entries="@array/spinner_items_mealtype"
+        android:spinnerMode="dialog"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <TextView
+        android:id="@+id/editmealtypelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerEditMealType"
+        android:layout_alignParentTop="true"
+        android:text="Meal Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/editmealselectlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerEditMealType"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Select Meal To Edit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/listviewEditMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayoutDelMealBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mealtypeTV"
+        tools:listitem="@android:layout/simple_list_item_2" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/mealtypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerEditMeal"
+        android:layout_below="@+id/spinnerEditMeal"
+        android:text="Total Calories"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/editmealtotalcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerEditMeal"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/mealtypeTV"
+        android:text="000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</RelativeLayout>

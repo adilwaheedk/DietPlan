@@ -1,0 +1,143 @@
+# view AndroidManifest.xml #generated:52
+-keep class com.example.dietplan.activity.ActivityAddFood { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.example.dietplan.activity.ActivityAppSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.example.dietplan.activity.ActivityCreateMeal { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.example.dietplan.activity.ActivityDeleteFood { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.example.dietplan.activity.ActivityDeleteMeal { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.example.dietplan.activity.ActivityDialogEditDiet { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.example.dietplan.activity.ActivityDietPlan { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.example.dietplan.activity.ActivityEditMeal { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.example.dietplan.activity.ActivityFood { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.example.dietplan.activity.ActivityHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.example.dietplan.activity.ActivityManageMeal { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.example.dietplan.activity.ActivityProfile { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.example.dietplan.activity.ActivitySchedule { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.example.dietplan.activity.ActivitySelect { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.example.dietplan.activity.ActivitySplash { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.example.dietplan.alarm.AlarmReceiver { <init>(...); }
+
+# view res/xml/app_settings.xml #generated:63
+# view res/xml/app_settings.xml #generated:68
+# view res/xml/app_settings.xml #generated:73
+# view res/xml/app_settings.xml #generated:78
+-keep class com.example.dietplan.utils.TimePreference { <init>(...); }
+
+# onClick land\res/layout-land/activity_managemeal.xml #generated:59
+# onClick res/layout/activity_managemeal.xml #generated:59
+-keepclassmembers class * { *** addFood(...); }
+
+# onClick res/layout/activity_profile.xml #generated:378
+-keepclassmembers class * { *** assignGoal(...); }
+
+# onClick res/layout/dialogbox_edit_diet.xml #generated:37
+-keepclassmembers class * { *** cancelDiet(...); }
+
+# onClick res/layout/activity_addfood.xml #generated:29
+-keepclassmembers class * { *** clearFood(...); }
+
+# onClick res/layout/activity_createmeal.xml #generated:41
+-keepclassmembers class * { *** clearMeal(...); }
+
+# onClick land\res/layout-land/activity_managemeal.xml #generated:120
+# onClick res/layout/activity_managemeal.xml #generated:121
+-keepclassmembers class * { *** createMeal(...); }
+
+# onClick res/layout/activity_profile.xml #generated:406
+-keepclassmembers class * { *** defaultValues(...); }
+
+# onClick land\res/layout-land/activity_managemeal.xml #generated:85
+# onClick res/layout/activity_deletefood.xml #generated:19
+# onClick res/layout/activity_managemeal.xml #generated:85
+-keepclassmembers class * { *** deleteFood(...); }
+
+# onClick land\res/layout-land/activity_managemeal.xml #generated:146
+# onClick res/layout/activity_deletemeal.xml #generated:19
+# onClick res/layout/activity_managemeal.xml #generated:148
+-keepclassmembers class * { *** deleteMeal(...); }
+
+# onClick land\res/layout-land/activity_home.xml #generated:80
+# onClick res/layout/activity_home.xml #generated:81
+-keepclassmembers class * { *** dietPlanBtn(...); }
+
+# onClick res/layout/dialogbox_edit_diet.xml #generated:27
+-keepclassmembers class * { *** editDiet(...); }
+
+# onClick res/layout/activity_editmeal.xml #generated:19
+# onClick res/layout/activity_managemeal.xml #generated:174
+-keepclassmembers class * { *** editMeal(...); }
+
+# onClick land\res/layout-land/activity_managemeal.xml #generated:24
+# onClick res/layout/activity_managemeal.xml #generated:24
+-keepclassmembers class * { *** foodDetails(...); }
+
+# onClick land\res/layout-land/activity_home.xml #generated:106
+# onClick res/layout/activity_home.xml #generated:108
+-keepclassmembers class * { *** mealBtn(...); }
+
+# onClick res/layout/activity_select.xml #generated:244
+-keepclassmembers class * { *** nextBtn(...); }
+
+# onClick res/layout/activity_select.xml #generated:236
+-keepclassmembers class * { *** previousBtn(...); }
+
+# onClick land\res/layout-land/activity_home.xml #generated:50
+# onClick res/layout/activity_home.xml #generated:55
+-keepclassmembers class * { *** profileBtn(...); }
+
+# onClick res/layout/activity_deletefood.xml #generated:29
+-keepclassmembers class * { *** refreshFood(...); }
+
+# onClick res/layout/activity_deletemeal.xml #generated:29
+# onClick res/layout/activity_editmeal.xml #generated:29
+-keepclassmembers class * { *** refreshMeal(...); }
+
+# onClick res/layout/activity_addfood.xml #generated:19
+-keepclassmembers class * { *** saveFood(...); }
+
+# onClick res/layout/activity_createmeal.xml #generated:31
+-keepclassmembers class * { *** saveMeal(...); }
+
+# onClick res/layout/activity_profile.xml #generated:394
+-keepclassmembers class * { *** saveProfile(...); }
+
+# onClick res/layout/activity_select.xml #generated:267
+-keepclassmembers class * { *** savedietBtn(...); }
+
+# onClick land\res/layout-land/activity_dietplan.xml #generated:94
+# onClick res/layout/activity_dietplan.xml #generated:124
+-keepclassmembers class * { *** scheduleBtn(...); }
+
+# onClick land\res/layout-land/activity_dietplan.xml #generated:123
+# onClick res/layout/activity_dietplan.xml #generated:95
+-keepclassmembers class * { *** selectdietBtn(...); }
+

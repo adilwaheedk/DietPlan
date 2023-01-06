@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutDeleteMeal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context=".activity.ActivityDeleteFood" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutDelMealBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/deletefoodbtn"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteFood"
+            android:text="Delete Food"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/refreshbtn"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="refreshFood"
+            android:text="Refresh"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delfoodtypelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerDelFoodType"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Food Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDelFoodType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delfoodselectlbl"
+        android:layout_below="@+id/delfoodtypelbl"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:spinnerMode="dialog"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <TextView
+        android:id="@+id/delfoodselectlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerDelFoodType"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Select Food To Delete"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDelFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delfoodselectlbl"
+        android:layout_alignRight="@+id/spinnerDelFoodType"
+        android:layout_below="@+id/delfoodselectlbl"
+        android:spinnerMode="dialog"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+</RelativeLayout>

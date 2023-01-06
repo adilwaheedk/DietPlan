@@ -1,0 +1,75 @@
+
+Description:
+Diet Charts and List for various food items with Calories.
+Once diet plan is ready, system can allocate Diet Plan (weekly).
+Provide Alerts per meal with item to eat.
+--------------------------------------------------------------------------
+
+Functionality:
+> Database of food (Name, Calories,....)
+> Create your weekly diet plan
+	> Daily intake of calories should be according to goal
+	> Weekly plan
+> Alert Service (Four Times)
+	> Breakfast
+	> Lunch
+	> Snacks
+	> Dinner
+-----------------------------------------------------------------------------------------
+Convert feet, inche into centimeters
+(feet * 30.48) + (inche * 2.54) = height (cm)
+
+-----------------------------------------------------------------------------------------
+Age: 4 to 90 yrs
+-----------------------------------------------------------------------------------------
+Weight: 10 to 200 kg
+-----------------------------------------------------------------------------------------
+Height: 134.62 to 218.44 cm
+-----------------------------------------------------------------------------------------
+Body Mass Index (BMI)
+
+Formula:
+BMI = weight(kg) / (height(cm) * 0.01)^2
+
+BMI Categories
+Underweight: < 18.5
+Normal:	18.5 to 24.9
+Overweight: 25 to 29.9
+Obesity: > 30
+-----------------------------------------------------------------------------------------
+Basal Metabolic Rate (BMR) (kcal Per Day)
+BMR = 88.362 + (13.397 * weight in kg) + (4.799 * height in cm) - (5.677 * age in years) [Men]
+BMR = 447.593 + (9.247 * weight in kg) + (3.098 * height in cm) - (4.330 * age in years) [Women]
+
+-----------------------------------------------------------------------------------------
+Daily Exercise (Daily kCal need): 
+Sendentary = BMR x 1.2
+Light = BMR x 1.375
+Moderate = BMR x 1.55
+Heavy  = BMR x 1.725
+Extreme = BMR x 1.9
+
+-----------------------------------------------------------------------------------------
+Goals:
+
+Maintain Weight
+To maintain weight, you might required calories by 500 per day.
+
+Weight Loss
+To lose one pound per week, you might decrease your required calories by 500 per day.
+(-500 calories X 7 days per week = -3500 calories)
+
+Weight Gain
+To gain one pound per week, you might increase your required calories by 500 per day.
+(500 calories X 7 days per week = 3500 calories)
+
+Recommended:
+A minimum of 1200 calories per day for females.
+A minimum of 1800 calories per day for males.
+
+-----------------------------------------------------------------------------------------
+Food Database:
+http://www.oocities.org/Axiom43/calories.html
+-----------------------------------------------------------------------------------------
+
+

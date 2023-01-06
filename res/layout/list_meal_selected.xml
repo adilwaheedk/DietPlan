@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutListMeal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_cyan"
+    android:orientation="horizontal"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/selname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/selsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/selname"
+        android:text="[Size]"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/selcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:text="000"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/selqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/selsize"
+        android:text="x2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+</RelativeLayout>

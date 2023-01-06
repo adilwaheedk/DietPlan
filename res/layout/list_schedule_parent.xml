@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.7"
+    android:background="@color/green_2"
+    android:orientation="horizontal"
+    android:padding="6dp" >
+
+    <TextView
+        android:id="@+id/scheduleday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editmealnamelbl"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:text="Day"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/editmealnamelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/scheduletotal"
+        android:gravity="center"
+        android:text="Total Intake"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/scheduletotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/scheduleday"
+        android:layout_alignBottom="@+id/scheduleday"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="000"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+</RelativeLayout>

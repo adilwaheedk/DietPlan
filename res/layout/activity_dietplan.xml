@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutDietPlan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context=".activity.ActivityDietPlan" >
+
+    <TextView
+        android:id="@+id/bmitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Body Mass Index:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bmrtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmivalue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:text="Basal Metabolic Rate:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/activetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmrvalue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:text="Daily Calories Need:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bmivalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmitext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:text="BMI Value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/bmrvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmrtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:text="BMR Value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/activevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:text="Active Value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/choosedietbtnlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activevalue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/choosedietbtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/list"
+            android:onClick="selectdietBtn"
+            android:scaleType="fitXY"
+            android:src="@drawable/list" />
+
+        <TextView
+            android:id="@+id/choosediettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Diet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/schedulebtnlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choosedietbtnlayout"
+        android:layout_below="@+id/choosedietbtnlayout"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/schedulebtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/list"
+            android:onClick="scheduleBtn"
+            android:scaleType="fitXY"
+            android:src="@drawable/list" />
+
+        <TextView
+            android:id="@+id/scheduletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="14dp"
+            android:text="View Schedule"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

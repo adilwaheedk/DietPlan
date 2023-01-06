@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutListMealHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_2"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/hdrfoodtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Food Type"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hdrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hdrfoodtype"
+        android:layout_marginLeft="8dp"
+        android:text="Name"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hdrSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hdrName"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/hdrName"
+        android:text="[Serving Size]"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hdrQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hdrSize"
+        android:layout_alignBottom="@+id/hdrSize"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/hdrSize"
+        android:text="Quantity"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hdrCals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hdrfoodtype"
+        android:layout_marginRight="8dp"
+        android:text="Calories"
+        android:textColor="@color/silver"
+        android:textSize="15sp" />
+
+</RelativeLayout>

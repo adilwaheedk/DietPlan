@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutListMeal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/silver"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:text="Name"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/foodsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/foodname"
+        android:text="[Size]"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <CheckBox
+        android:id="@+id/foodcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/foodcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/foodcheck"
+        android:text="0"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/foodqty"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/foodsize"
+        android:ems="10"
+        android:includeFontPadding="false"
+        android:inputType="numberSigned"
+        android:maxLength="2"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="1"
+        android:textSize="15sp"
+        android:typeface="serif" >
+    </EditText>
+
+</RelativeLayout>
